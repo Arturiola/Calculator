@@ -1,0 +1,44 @@
+ANOTATION: 
+This app is two-module calculator, that implements basic arithmetic operations, allows adding and solving formulas and provides solutions of 
+written down expressions, in addition it supports stylistic customization.
+1. FUNCTIONAL REQUIREMENTS:
+1.1.Operators:
+1.1.1. App must provide such arithmetic operations with numbers: binary: + - * / % ^; unary: ! √ ln log; markup: = ( ) .  .
+1.1.2. App must support creation of arithmetic expression using binary and unary operators according to windows calculator model.
+1.1.3. Operator ( creates Expression of format (_Number1_operator_Number2_operator_..._numberN_) and upon placement creates additional operator ) after cursor.
+1.1.4. Operator . may only be used inside of number. Using operator . twice or outside the number must be blocked.
+1.2. Constants:
+1.2.1. App must hold a library of constants PI, e, φ, and γ.
+1.2.2. App must allow user to create and assign their own constant values.
+1.3. Formulas:
+1.3.1. App must provide a module that provides preset of 10 math and physics formulas, given in specification below.
+1.3.2. App must provide greek alphabet for user to be able to create more formulas and sets of formulas.
+1.3.3. App must provide opportunity for user to write explanation for every letter in formula, preset formulas must contain 
+explanations of given letters.
+1.3.4. App must allow user to fill in values of letters in separate field or use constants, entered values must immediately replace 
+letters.
+1.4. History:
+1.4.1. App must save up to 5 last calculations done and show them to user.
+1.4.2. App must contain registration to allow user to save his created formulas, constants and history.
+1.5. Authentication:
+1.5.1. App must allow user to create an account using unique credentials to save his created formulas, constants and history.
+1.5.2. App must provide login and logout functionality for user account.
+1.5.3. App must maintain active session of the user to avoid requiring to enter credentials upon every app reload.
+1.6. Data Persistence:
+1.6.1. App must save newly created formulas, custom constants and history records to the database and bind them to the specific user account.
+1.6.2. App must automatically fetch and present user's saved formulas, constants and history from the database immediately upon successful login.
+
+2. NON-FUNCTIONAL REQUIREMENTS:
+2.1. Security:
+2.1.1. App must store user passwords exclusively in hashed format in the database.
+2.1.2. App must use secure protocols to transmit data between client and server components.
+2.2. Architecture and Technology:
+2.2.1. App must implement Client-Server architecture for data exchange.
+2.2.2. App frontend must be built using vanilla technologies (HTML, CSS, JS) without external UI frameworks.
+2.3. UI/UX and Performance:
+2.3.1. App must provide responsive interface that scales and works correctly on both desktop and mobile screens.
+2.3.2. App must execute all visual state transitions and palette color changes smoothly and without rendering delays.
+2.3.3. App must provide light and dark modes for background and color palette of 12 colors, each meeting 4.5:1 contrast requierement, for text elements in buttons
+
+
+
